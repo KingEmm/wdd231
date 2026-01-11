@@ -51,7 +51,7 @@ header nav a {
 }
 
 header nav a:hover{
-    background-color: grey;
+    background-color: var(--grey);
 }
 
 .about{
@@ -60,7 +60,7 @@ header nav a:hover{
     gap: 5%;
 }
 .about section{
-    border: 1px solid grey;
+    border: 1px solid var(--grey);
 }
 
 section {
@@ -101,11 +101,9 @@ section h2{
     width: 30%;
     /* margin: 0; */
     box-sizing: border-box;
-    padding: .8rem 0;
-    background: rgb(46, 28, 0);
-    border: none;
+    padding: .8rem 0;    border: none;
     font-weight: bold;
-    color: aliceblue;
+    color: var(--primary);
     transition: all .5s;
     border-radius: 5px;
 }
