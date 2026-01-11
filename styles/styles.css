@@ -8,6 +8,7 @@
 body{
     width: 80%;
     margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
 }
 
 header{
@@ -36,25 +37,21 @@ header img{
     border-radius: 5px;
 }
 
-header ul {
+header nav {
     display: flex;
     grid-column: 1 / span 3;
     padding: 0;
     background-color: var(--primary);
 }
 
-header ul li {
+header nav a {
     padding: 10px;
-    list-style-type: none;
-}
-
-header ul li:hover{
-    background-color: grey;
-}
-
-header ul li a{
     color: var(--white);
     text-decoration: none;
+}
+
+header nav a:hover{
+    background-color: grey;
 }
 
 .about{
@@ -151,7 +148,6 @@ footer{
     background: var(--secondary);
     margin: 0;
     text-align: center;
-    margin: 0;
     padding: 1rem 0;
 }
 
@@ -174,14 +170,15 @@ footer div img{
     header button{
         display: block;
         background: none;
-        border: none
+        border: none;
+        font-size: 2.5rem;
     }
-    header ul{
-        display: grid;
+    header nav{
+        /* display: grid; */
         display: none;
     }
-    header ul.show{
-        display: block;
+    header nav.show{
+        display: grid;
     }
     .about{
         grid-template-columns: 100%;

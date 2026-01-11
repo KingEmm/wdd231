@@ -8,7 +8,7 @@ nav_btn.addEventListener('click',()=>{
         open=false;
         nav_btn.innerHTML = '&#9776;';
     }
-    document.querySelector('header ul').classList.toggle('show')
+    document.querySelector('header nav').classList.toggle('show')
 })
 
 
