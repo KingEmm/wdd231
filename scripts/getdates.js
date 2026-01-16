@@ -9,7 +9,7 @@ let navLinks = document.querySelectorAll('nav a');
 console.log(path)
 navLinks.forEach(ele => {
     ele.classList.add('navLink')
-        if (path === "index" | path === ''){
+        if (path.includes("index") | path === 'wd'){
             navLinks[0].style.background = 'var(--grey)';
         }
         else if (window.location.pathname.includes(ele.textContent.split(' ')[0])){
