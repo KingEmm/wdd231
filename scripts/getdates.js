@@ -6,10 +6,10 @@ let path = window.location.pathname;
 path = path.slice(1, path.length-5)
 
 let navLinks = document.querySelectorAll('nav a');
-
+console.log(path)
 navLinks.forEach(ele => {
     ele.classList.add('navLink')
-        if (path === "index"){
+        if (path === "index" | path === ''){
             navLinks[0].style.background = 'var(--grey)';
         }
         else if (window.location.pathname.includes(ele.textContent.split(' ')[0])){
