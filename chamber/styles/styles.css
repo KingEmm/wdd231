@@ -211,9 +211,6 @@ footer .socials img{
 
 
 @media screen and (max-width: 640px) {
-    body {
-        width:95%
-    }
     header{
         position: relative;
     }
