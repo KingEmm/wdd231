@@ -1,0 +1,59 @@
+
+[
+  {
+    "name": "KEO Automobile",
+    "address": "Amoja, Okposi Okwu",
+    "phone_number": "+2349055516272",
+    "website": "https://kingemm.github.io/chamber",
+    "image": "https://dummyimage.com/300x300/000/fff.svg&text=KEO+Auto",
+    "membership_level": "gold"
+  },
+  {
+    "name": "Apex Motors",
+    "address": "Abakaliki Road, Ebonyi State",
+    "phone_number": "+2348123456781",
+    "website": "https://example.com/apex-motors",
+    "image": "https://dummyimage.com/300x300/1a1a1a/ffffff.svg&text=Apex+Motors",
+    "membership_level": "silver"
+  },
+  {
+    "name": "Nova Auto Works",
+    "address": "Presco Junction, Abakaliki",
+    "phone_number": "+2348123456782",
+    "website": "https://example.com/nova-auto",
+    "image": "https://dummyimage.com/300x300/003366/ffffff.svg&text=Nova+Auto",
+    "membership_level": "bronze"
+  },
+  {
+    "name": "Prime Vehicle Care",
+    "address": "Water Works Road, Abakaliki",
+    "phone_number": "+2348123456783",
+    "website": "https://example.com/prime-vehicle",
+    "image": "https://dummyimage.com/300x300/660000/ffffff.svg&text=Prime+Care",
+    "membership_level": "gold"
+  },
+  {
+    "name": "Velocity Garage",
+    "address": "Ogoja Road, Abakaliki",
+    "phone_number": "+2348123456784",
+    "website": "https://example.com/velocity-garage",
+    "image": "https://dummyimage.com/300x300/004d40/ffffff.svg&text=Velocity",
+    "membership_level": "silver"
+  },
+  {
+    "name": "Elite Auto Hub",
+    "address": "Afikpo Road, Ebonyi State",
+    "phone_number": "+2348123456785",
+    "website": "https://example.com/elite-auto",
+    "image": "https://dummyimage.com/300x300/2c2c54/ffffff.svg&text=Elite+Auto",
+    "membership_level": "platinum"
+  },
+  {
+    "name": "RoadMaster Services",
+    "address": "International Market Area, Abakaliki",
+    "phone_number": "+2348123456786",
+    "website": "https://example.com/roadmaster",
+    "image": "https://dummyimage.com/300x300/3e2723/ffffff.svg&text=RoadMaster",
+    "membership_level": "bronze"
+  }
+]

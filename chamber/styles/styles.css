@@ -1,0 +1,264 @@
+:root{
+    --primary : rgb(22, 21, 21);
+    --secondary : rgb(202, 191, 191);
+    --grey : rgb(153, 145, 145);
+    --white: rgb(240, 234, 229);
+}
+
+
+body{
+    font-family: 'Rubik', monospace;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    display: flex;
+    /* grid-template-columns: 44px  40% auto 44px; */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--secondary);
+    padding: .5rem 1rem;
+    box-shadow: 4px 5px 5px var(--secondary);
+}
+
+header img{
+    width: 44px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    
+}
+
+button{
+    display: none;
+}
+
+nav{
+    display: flex;
+}
+
+
+nav a{
+    text-decoration: none;
+    margin: 0 .3rem;
+    color: var(--primary);
+    position: relative;
+    padding: .5rem;
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary);
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.view div{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+}
+
+#grid{
+    margin-right: .5rem;
+}
+
+#list{
+    margin-left: .5rem;
+}
+
+#grid:hover, #list:hover{
+    cursor: pointer;
+    background-color: var(--secondary);
+    transition: all .5s;
+}
+
+.toggled{
+    background-color: var(--secondary);
+}
+
+.view img{
+    width: 3rem;
+    height: auto;
+}
+
+ul{
+    padding: 0;
+}
+
+.gd{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1.5rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.li{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.li li{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.li li:nth-child(odd){
+    background-color: var(--grey);
+}
+
+.li .comp-name{
+    display: block;
+}
+
+.li img{
+    display: none;
+}
+
+.gd li{
+    list-style-type: none;
+    text-align: center;
+    box-shadow: 3px 4px 6px rgba(37, 37, 37, 0.719);
+    text-align: center;
+    padding: 1rem;
+    border: .5px solid rgb(128, 113, 113);
+}
+
+.gd .comp-name{
+    display: none;
+}
+
+.gd li img{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gd li a{
+    max-width: 100%;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    padding: 2rem 7.5%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    margin-top: 2rem;
+}
+
+footer .socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .socials img{
+    width: 44px;
+    height: auto
+}
+
+
+@media screen and (max-width: 1040px) {
+    header{
+        padding: .5rem;
+    }
+    nav a{
+        margin: 0.1rem;
+    }
+
+    .gd{
+        grid-template-columns: 49% 49%;
+        width: 95%;
+    }
+    footer{
+        padding: 2rem 2.5%;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+    body {
+        width:95%
+    }
+    header{
+        position: relative;
+    }
+    header button{
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2.5rem;
+    }
+    header nav{
+        /* display: grid; */
+        display: none;
+        position: absolute;
+        width: 60%;
+        right: 0;
+        background-color: var(--grey);
+        text-align: center;
+    }
+
+    header nav a{
+        margin: 0;
+        border-radius: 0;
+    }
+    header nav.show{
+        display: grid;
+    }
+    .about{
+        grid-template-columns: 100%;
+        gap: 0;
+    }
+    .gd{
+        grid-template-columns: 100%;
+    }
+    
+    .li li{
+        grid-template-columns: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .li li p, .li li a{
+        padding: 5px;
+        margin: 0;
+    }
+    footer{
+        grid-template-columns: 100%
+    }
+
+}
