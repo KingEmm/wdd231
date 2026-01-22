@@ -154,6 +154,7 @@ ul{
     box-shadow: 3px 4px 6px rgba(37, 37, 37, 0.719);
     padding: 1rem;
     border: .5px solid rgb(128, 113, 113);
+    display: grid;
 }
 
 .gd .comp-name{
@@ -166,7 +167,7 @@ ul{
 }
 
 .gd li a{
-    max-width: 100%;
+    margin-top: .5rem;
 }
 
 footer{
