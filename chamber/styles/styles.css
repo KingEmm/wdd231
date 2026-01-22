@@ -3,11 +3,12 @@
     --secondary : rgb(202, 191, 191);
     --grey : rgb(153, 145, 145);
     --white: rgb(240, 234, 229);
+    --font-family: 'Rubik', monospace
 }
 
 
 body{
-    font-family: 'Rubik', monospace;
+    font-family: var(--font-family);
     margin: 0;
 }
 
@@ -151,7 +152,6 @@ ul{
     list-style-type: none;
     text-align: center;
     box-shadow: 3px 4px 6px rgba(37, 37, 37, 0.719);
-    text-align: center;
     padding: 1rem;
     border: .5px solid rgb(128, 113, 113);
 }
