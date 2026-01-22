@@ -17,7 +17,7 @@ nav_btn.addEventListener('click',()=>{
 
 let grabData = async ()=>{
     try{
-        let members = await fetch("http://127.0.0.1:5500/chamber/data/members.json")
+        let members = await fetch("https://kingemm.github.io/wdd231/chamber/data/members.json")
         return await members.json()
     }// catch(error){
     //     console.log(error);
