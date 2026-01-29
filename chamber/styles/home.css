@@ -69,8 +69,10 @@ body{
 }
 
 .home section img{
-    /* margin: 0 auto; */
     margin: 0;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 .biz_info{
@@ -144,4 +146,23 @@ body{
 
 .biz_info{
     margin: 0 0 .3rem .3rem;
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .home{
+        grid-template-columns: 100%;
+        grid-gap: 3rem;
+    }
+
+    .home h1{
+        grid-column: unset;
+    }
+
+    .business{
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+
 }

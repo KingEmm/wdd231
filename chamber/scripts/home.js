@@ -69,9 +69,9 @@ const appendBusiness = async ()=>{
                 </div>
                 <img loading="lazy" src="${element['image']}" alt="business logo">
                 <div class="biz_info">
-                <span><strong>Email</strong> <p>: info.${element['website'].split('/')[2]}</p></span>
-                <span><strong>Phone</strong> <p>: ${element['phone_number']}</p></span>
-                <span><strong>URL</strong> <p>: ${element['website'].slice(8, element['website'].length)}</p></span>
+                <span><strong>Email</strong> : info.${element['website'].split('/')[2]}</span>
+                <span><strong>Phone</strong> : ${element['phone_number']}</span>
+                <span><strong>URL</strong> : ${element['website'].slice(8, element['website'].length)}</span>
                 </div>
                 `
                 business.appendChild(sect)
@@ -99,9 +99,9 @@ const appendForecastData = async () => {
 
         weather_forecast.innerHTML = '';
         weather_forecast.innerHTML = `
-                                    <span>${getDay(new Date(data['list'][0]['dt_txt']).getUTCDay())}: 35.51°C</span>
-                                    <span>${getDay(new Date(data['list'][8]['dt_txt']).getUTCDay())}: 34.66°C</span>
-                                    <span>${getDay(new Date(data['list'][16]['dt_txt']).getUTCDay())}: 31.34°C</span>
+                                    <span>${getDay(new Date(data['list'][0]['dt_txt']).getUTCDay())}: ${data['list'][0]['main']['temp']}°C</span>
+                                    <span>${getDay(new Date(data['list'][8]['dt_txt']).getUTCDay())}: ${data['list'][8]['main']['temp']}°C</span>
+                                    <span>${getDay(new Date(data['list'][16]['dt_txt']).getUTCDay())}: ${data['list'][16]['main']['temp']}°C</span>
                                 `
     }
     catch(error){
@@ -115,3 +115,11 @@ appendWeatherData();
 appendForecastData();
 
 appendBusiness()
+
+let nav_links = document.querySelectorAll('header nav a');
+
+nav_links.forEach(element => {
+    element.classList.remove('link')
+});
+
+nav_links[0].classList.add('link')
