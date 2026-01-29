@@ -1,20 +1,3 @@
-console.log("Hi there")
-let header = document.querySelector('header')
-let nav_btn = document.getElementById('nav-btn');
-let open = false
-nav_btn.addEventListener('click',()=>{
-    if (!open){
-        open=true;
-        nav_btn.innerHTML = '&#215;';
-    }else{
-        open=false;
-        nav_btn.innerHTML = '&#9776;';
-    }
-    document.querySelector('header nav').classList.toggle('show')
-    document.querySelector('header nav').style.top = `${header.offsetHeight}px`
-})
-
-
 let grabData = async ()=>{
     try{
         let members = await fetch("https://kingemm.github.io/wdd231/chamber/data/members.json")
