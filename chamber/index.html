@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=optional" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <meta name="description" content="The Directory page of ndi Ohaozara top registered members">
+    <meta name="description" content="The Ohaozara promotes Economic in Ohaozara and nation  wide Join us to network">
     <meta name="author" content="Emmanuel Kingsley Okafor">
     <title>Ohaozara Chamber Directory</title>
     <meta property="og:url" content="https://kingemm.github.io/chamber">
     <meta property="og:title" content="The Directories page of ndi Ohaozara showcasing list of our top registered members">
-    <meta property="og:description" content="Come view the list of ndi Ohaozara top registered members and the benefit of being part of us join now to participate in a lot of wholesome Commerce activities">
+    <meta property="og:description" content="The Ohaozara Chamber of Commerce promotes trade, industry, and economic growth in Ohaozara, Ebonyi State, Nigeria. Join us to network, access resources, and drive business success.">
     <!-- <meta name="og:description" content="Explore the world Ohaozara in different area of settings including business, politics and sports"> -->
     <meta property="og:image" content="https://kingemm.github.io/wdd231/images/profile.png">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -42,7 +42,11 @@
     </header>
     <main>
         <div class="banner">
-            <img src="images/okposi_large.jpg" alt="Okposi Court Area image">
+            <picture>
+                <source srcset="images/okposi.jpg" media="(max-width: 460px)">
+                <img src="images/okposi_large.jpg" alt="Okposi Image">
+            </picture>
+            <!-- <img src="" alt="Okposi Court Area image"> -->
             <a href="/join">Join Us</a>
         </div>
         <div class="home">
@@ -51,31 +55,33 @@
                 <h2>Events</h2>
                 <p>Ohaozara is a prominent Local Government Area in Ebonyi State, Nigeria, known for its rich cultural heritage, significant salt deposits, and agriculture. Comprising three major towns—Uburu, Okposi, and Ugwulangwu—it is a, major economic hub in the region for farming (yam, cassava, rice) and artisanal salt production. </p>
             </section>
-            <section>
+            <section class="crr_weather">
                 <h2>Current Weather</h2>
-                <img loading="lazy" src="images/weather.png" alt="Weather image">
+                <div>
+                    <img loading="lazy" src="images/weather.png" alt="Weather image">
+                </div>
                 <div class="c_temp">
-                    <strong>30 °C</strong>
+                    <!-- <strong>30 °C</strong>
                     <span>broken clouds</span>
                     <span>High: 36.36°</span>
                     <span>Low: 36.36°</span>
                     <span>Humidity: 36%</span>
                     <span>Sunrise: 07:05 AM</span>
-                    <span>Sunset: 06:54 PM</span>
+                    <span>Sunset: 06:54 PM</span> -->
                 </div>
             </section>
             <section>
                 <h2>Weather Forecast</h2>
                 <div class="w_for">
-                    <span>Thursday: 35.51°C</span>
+                    <!-- <span>Thursday: 35.51°C</span>
                     <span>Friday: 34.66°C</span>
-                    <span>Saturday: 31.34°C</span>
+                    <span>Saturday: 31.34°C</span> -->
 
                 </div>
             </section>
         </div>
         <div class="business">
-            <section>
+            <!-- <section>
                 <div class="business_name">
                     <h2>Events</h2>
                     <p>Court Area Okposi</p>
@@ -92,7 +98,7 @@
             </section>
             <section>
                 <h2>Weather Forecast</h2>
-            </section>
+            </section> -->
 
         </div>
     </main>

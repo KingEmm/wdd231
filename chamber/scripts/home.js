@@ -54,9 +54,13 @@ let getData = async(url) => {
 
 
 const appendBusiness = async ()=>{
-    const data = await getData("https://kingemm.github.io/wdd231/chamber/data/members.json");
-    // const data = await getData("http://127.0.0.1:5500/chamber/data/members.json");
-    const randThree = data.sort(()=> .5 - Math.random()).slice(0, 3)
+    // const data = await getData("https://kingemm.github.io/wdd231/chamber/data/members.json");
+    const data = await getData("http://127.0.0.1:5500/chamber/data/members.json");
+    let datas = await data.filter(element =>{
+        return element.membership_level === "gold" | element.membership_level === "silver";
+    });
+    // console.log(datas);
+    const randThree = datas.sort(()=> .5 - Math.random()).slice(0, 3)
     console.log(randThree);
     const business = document.querySelector('.business');
     business.innerHTML = ``
@@ -64,14 +68,16 @@ const appendBusiness = async ()=>{
         let sect = document.createElement('section');
         sect.innerHTML = `
                 <div class="business_name">
-                <h2>${element['name']}</h2>
-                <p>${element['address']}</p>
+                    <h2>${element['name']}</h2>
+                    <p>${element['address']}</p>
                 </div>
-                <img loading="lazy" src="${element['image']}" alt="business logo">
+                <div>
+                    <img loading="lazy" src="${element['image']}" alt="business logo">
+                </div>
                 <div class="biz_info">
-                <span><strong>Email</strong> : info.${element['website'].split('/')[2]}</span>
-                <span><strong>Phone</strong> : ${element['phone_number']}</span>
-                <span><strong>URL</strong> : ${element['website'].slice(8, element['website'].length)}</span>
+                    <span><strong>Email</strong> : info.${element['website'].split('/')[2]}</span>
+                    <span><strong>Phone</strong> : ${element['phone_number']}</span>
+                    <span><strong>URL</strong> : ${element['website'].slice(8, element['website'].length)}</span>
                 </div>
                 `
                 business.appendChild(sect)
@@ -99,7 +105,7 @@ const appendForecastData = async () => {
 
         weather_forecast.innerHTML = '';
         weather_forecast.innerHTML = `
-                                    <span>${getDay(new Date(data['list'][0]['dt_txt']).getUTCDay())}: ${data['list'][0]['main']['temp']}°C</span>
+                                    <span>Today: ${data['list'][0]['main']['temp']}°C</span>
                                     <span>${getDay(new Date(data['list'][8]['dt_txt']).getUTCDay())}: ${data['list'][8]['main']['temp']}°C</span>
                                     <span>${getDay(new Date(data['list'][16]['dt_txt']).getUTCDay())}: ${data['list'][16]['main']['temp']}°C</span>
                                 `
