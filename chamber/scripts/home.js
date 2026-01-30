@@ -43,7 +43,7 @@ let getData = async(url) => {
 
         let data = await response.json();
         
-        console.log(data);
+        // console.log(data);
         return data
         }
     catch(error){
@@ -54,8 +54,8 @@ let getData = async(url) => {
 
 
 const appendBusiness = async ()=>{
-    // const data = await getData("https://kingemm.github.io/wdd231/chamber/data/members.json");
-    const data = await getData("http://127.0.0.1:5500/chamber/data/members.json");
+    const data = await getData("https://kingemm.github.io/wdd231/chamber/data/members.json");
+    // const data = await getData("http://127.0.0.1:5500/chamber/data/members.json");
     let datas = await data.filter(element =>{
         return element.membership_level === "gold" | element.membership_level === "silver";
     });
@@ -78,6 +78,7 @@ const appendBusiness = async ()=>{
                     <span><strong>Email</strong> : info.${element['website'].split('/')[2]}</span>
                     <span><strong>Phone</strong> : ${element['phone_number']}</span>
                     <span><strong>URL</strong> : ${element['website'].slice(8, element['website'].length)}</span>
+                    <span><strong>Level</strong> : ${element['membership_level']}</span>
                 </div>
                 `
                 business.appendChild(sect)

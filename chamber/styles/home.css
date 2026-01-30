@@ -85,7 +85,7 @@
 .biz_info{
     display: grid;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .home section h2{
@@ -159,6 +159,21 @@
     flex-direction: row;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .home, .business{
+        grid-template-columns: 50% 48%;
+        grid-gap: 2%;
+    }
+
+    .home h1{
+        grid-column: 1 / span 2;
+    }
+
+    .business{
+        margin-top: 4rem;
+    }
+}
 
 @media screen and (max-width: 640px) {
     .home{
