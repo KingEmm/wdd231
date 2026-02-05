@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="description" content="The Ohaozara promotes Economic in Ohaozara and nation  wide Join us to network">
     <meta name="author" content="Emmanuel Kingsley Okafor">
-    <title>Ohaozara Chamber Directory</title>
+    <title>Join Ohaozara Chamber</title>
     <meta property="og:url" content="https://kingemm.github.io/chamber">
     <meta property="og:title" content="The Directories page of ndi Ohaozara showcasing list of our top registered members">
     <meta property="og:description" content="Ohaozara Chamber of Commerce promotes trade and economic growth in Ohaozara, Ebonyi State, Nigeria. Join us to network and drive business success.">
@@ -47,34 +47,35 @@
             <form action="thankyou.html" method="get">
                     <div id="first_nam">
                         <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name" required="">
+                        <input type="text" autocomplete="given-name" name="first_name" id="first_name" required="">
                     </div>
 
                     <div id="last_nam">
                         <label for="last_name">Last Name </label>
-                        <input type="text" name="last_name" id="last_name" required="">
+                        <input type="text" autocomplete="family-name" name="last_name" id="last_name" required="">
                     </div>
 
                     <div id="titl">
                         <label for="title">Title </label>
-                        <input type="text" name="title" id="title" required="">
+                        <input type="text" autocomplete="organization-title" name="title" id="title" required="">
                     </div>
                     
                     <div id="emai">
                         <label for="Email">Your Email</label>
-                        <input type="email" name="Email" id="Email" required="">
+                        <input type="email" autocomplete="email" name="Email" id="Email" required="">
                     </div>
 
                     <div id="phon">
                         <label for="phone">Your Phone</label>
-                        <input type="tel" name="phone" id="phone" required="">
+                        <input type="tel" name="phone" autocomplete="tel" id="phone" required="">
                     </div>
         
                     <div id="busines">
                         <label for="business">Business Name</label>
-                        <input type="text" name="business" id="business" required="">
+                        <input type="text" name="business" id="business" autocomplete="organization" required="">
                     </div>
                     <div>
+                        <label for="membership_level"></label>
                         <select name="membership_level" id="membership_level" required="">
                             <option id="default" value="" selected="" disabled="">Select Membership Type.</option>
                             <option id="fc-1888" value="Non Profit Membership Level">Non Profit Membership Level</option>
@@ -85,9 +86,9 @@
                     </div>
                     <div id="businessDescriptio">
                         <label for="businessDescription">Business Description</label>
-                        <textarea rows="5" cols="30" name="businessDescription" id="businessDescription" required=""></textarea>
+                        <textarea rows="5" cols="30" title="Brief Description about brand" name="businessDescription" id="businessDescription" required=""></textarea>
                     </div>
-                    <input type="hidden" id="time" name="time" required>
+                    <input type="hidden" id="time" name="time" >
                     
                     <div class="btn">
                         <button id="btn" type="submit">Join</button>
