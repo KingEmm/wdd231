@@ -4,6 +4,7 @@ main {
     display: grid;
     grid-template-columns: 40% 57%;
     column-gap: 3%;
+    position: relative;
 }
 
 .join{
@@ -121,6 +122,31 @@ section:nth-child(3) div a{
     font-weight: bold;
     /* font-style: italic; */
 }
+
+/* button{
+    display: block;
+} */
+
+dialog{
+    /* display: grid; */
+    width: 60%;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    /* left: 20%; */
+}
+::backdrop{
+    background-color: rgb(10, 10, 10, .5);
+    display: block;
+}
+
+dialog h2{
+    text-align: center;
+}
+
 
 
 @keyframes fadeIn {
