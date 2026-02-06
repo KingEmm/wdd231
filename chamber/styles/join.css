@@ -9,6 +9,9 @@ main {
 .join{
     grid-column: 1 /span 2;
 }
+section h2{
+    text-align: center;
+}
 
 form {
     width: 100%;
@@ -158,29 +161,22 @@ section:nth-child(3) div a{
     main{
         width: 90%;
     }
-
-    /* .home h1{
-        grid-column: 1 / span 2;
-    } */
-
-    .business{
-        margin-top: 4rem;
-    }
 }
 
 @media screen and (max-width: 640px) {
-    .home{
-        grid-template-columns: 100%;
+    main{
+        display: block;
+        width: 95%;
         grid-gap: 3rem;
     }
 
-    .home h1{
-        grid-column: unset;
+    section:nth-child(3){
+        margin-top: 3rem;
     }
 
-    .business{
-        grid-template-columns: 100%;
-        gap: 2rem;
+    form > div{
+        width:90%;
     }
+
 
 }
