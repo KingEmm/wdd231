@@ -6,7 +6,7 @@ main {
     column-gap: 3%;
 }
 
-h1{
+.join{
     grid-column: 1 /span 2;
 }
 
