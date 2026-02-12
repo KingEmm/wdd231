@@ -37,7 +37,7 @@ img {
 
 .message{
     text-align: center;
-    padding: 10;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--primary);
     background: var(--grey);
