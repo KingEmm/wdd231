@@ -1,0 +1,35 @@
+main{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    /* width: 90%; */
+    margin: 0 auto;
+    gap: 2%;
+}
+
+main section{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: .7fr 1.3fr;
+    grid-template-areas: "h2 h2" 
+                "img p" 
+                "button button";
+    border: 1px solid black;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+main section h2{
+    grid-area: h2;
+}
+main section img{
+    grid-area: img;
+}
+main section p{
+    grid-area: p;
+}
+main section button{
+    grid-area: button;
+}
