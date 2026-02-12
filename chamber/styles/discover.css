@@ -32,12 +32,17 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all .5s;
+}
+
+img:hover{
+    opacity: 0.5;
 }
 
 
 .message{
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 5px;
     border: 1px solid var(--primary);
     background: var(--grey);
@@ -63,6 +68,9 @@ main section button{
 @media screen and (max-width: 1024px) {
     .discoveries{
         grid-template-columns: 100%;
+    }
+    img:hover{
+        opacity: unset;
     }
 }
 

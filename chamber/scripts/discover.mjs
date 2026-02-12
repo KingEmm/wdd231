@@ -8,7 +8,10 @@ places.forEach(item => {
     const section = document.createElement('section');
     section.innerHTML = ` <h2>${item.name}</h2>
             <div><img src="${item.image}" width="100" height="100" loading="lazy" alt="${item.name} image"></div>
-            <p>${item.description}</p>
+            <div>
+                <p>${item.description}</p>
+                <span>${item.location}</span>
+            </div>
             <button>Learn More</button>`
 
     main.appendChild(section);
@@ -41,3 +44,11 @@ else{
 }
 
 let now = Date.now();
+
+let nav_links = document.querySelectorAll('header nav a');
+
+nav_links.forEach(element => {
+    element.classList.remove('link')
+});
+
+nav_links[3].classList.add('link')
