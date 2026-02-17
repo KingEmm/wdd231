@@ -1,0 +1,28 @@
+
+.search {
+    display: flex;
+    width: 50%;
+    margin: 3rem auto;
+}
+
+.featured_products{
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.product_card{
+    /* height: auto; */
+    max-height: 25rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .product_card{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .product_card{
+        width: 45%;
+    }
+}
