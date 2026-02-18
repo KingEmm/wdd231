@@ -20,7 +20,7 @@ export const getData = async(url) => {
 export class Get{
     getFeatured = async(all)=>{
         try{
-            const data = await getData('http://127.0.0.1:5500/final/data/product.json');
+            const data = await getData('https://kingemm.github.io/wdd231/final/data/product.json');
             let stores = data['stores']
             // console.log(stores);
             const featured = document.querySelector('.featured_product')
@@ -65,7 +65,7 @@ export class Get{
 
     getProducts = async()=>{
         try{
-            const data = await getData('http://127.0.0.1:5500/final/data/product.json');
+            const data = await getData('https://kingemm.github.io/wdd231/final/data/product.json');
             let stores = data['stores']
             // console.log(stores);
             // const featured = document.querySelector('.featured_product')
