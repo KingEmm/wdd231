@@ -1,9 +1,24 @@
 import { Get } from "./app.mjs";
 
+
 const keo_cart = JSON.parse(localStorage.getItem('keo_cart')) || [];
+
+// let itemsList = document.querySelector('ol');
+let modal = document.querySelector('dialog');
+
 
 let ol = document.querySelector('.cart_item ol');
 ol.innerHTML = '';
+
+ol.addEventListener('click', (e)=>{
+    if(e.target.matches('a')){
+        modal.showModal();
+    }
+})
+
+document.querySelector('#close-modal').addEventListener('click', ()=>{
+    modal.close();
+})
 
 let products = new Get;
 

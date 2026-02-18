@@ -1,8 +1,52 @@
+h1{
+    color: var(--primary);
+    text-align: center;
+}
+
+.featured{
+    border: none;
+}
+
+input{
+    border: none;
+}
 
 .search {
     display: flex;
     width: 50%;
-    margin: 3rem auto;
+    margin: 3rem;
+    align-items: end;
+}
+
+.search label{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.search div{
+    width: 40%;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.search div img{
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+    width: 20px;
+    height: 100%;
+    /* border-right: 1px solid var(--text-dark); */
+    /* object-fit: cover; */
+}
+
+.search input{
+    outline: none;
+    border: 2px solid var(--text-dark);
+    padding-left: 1.5rem;
+    background: transparent;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
 .featured_products{
@@ -20,9 +64,18 @@
     .product_card{
         width: 30%;
     }
+    .search div{
+        width: 60%;
+    }
 }
 @media screen and (max-width: 640px) {
     .product_card{
         width: 45%;
+    }
+    .search div{
+        width: 80%;
+    }
+    .search{
+        margin: 5%;
     }
 }

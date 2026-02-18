@@ -280,6 +280,14 @@ footer .socials img{
     margin: 1rem auto;
 }
 
+.dialog{
+    width: 60%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 1040px) {
     header{
         padding: .5rem;
@@ -294,6 +302,10 @@ footer .socials img{
     }
     footer{
         padding: 2rem 2.5%;
+    }
+    dialog{
+        width: 70%;
+        position: absolute;
     }
 }
 
@@ -330,7 +342,7 @@ footer .socials img{
         right: 40%;
         top: 10%;
     }
-
+    
     header nav.show{
         display: grid;
     }
@@ -353,8 +365,12 @@ footer .socials img{
         padding: 5px;
         margin: 0;
     }
+
     footer{
         grid-template-columns: 100%
     }
-
+    
+    dialog{
+        width: 80%;    
+    }
 }

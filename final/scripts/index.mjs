@@ -15,6 +15,7 @@ featured_product.addEventListener('click', (e)=>{
         console.dir(keo_cart);
         keo_cart.push(e.target.dataset.value);
         localStorage.setItem('keo_cart', JSON.stringify(keo_cart));
+        cart_count.textContent = keo_cart.length;
         // console.log(e.target.dataset.value)
     }
 })
