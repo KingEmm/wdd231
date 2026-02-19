@@ -43,7 +43,7 @@
           "price": 22000,
           "rating": 4.3,
           "inStock": true,
-          "image": "images/"
+          "image": "images/canvas_casual_shoes.png"
         }
       ]
     },
@@ -168,7 +168,7 @@
           "price": 26000,
           "rating": 4.6,
           "inStock": true,
-          "image": "images/"
+          "image": "images/bluetooth_speaker.png"
         },
         {
           "id": 19,
