@@ -11,15 +11,15 @@
           "price": 28500,
           "rating": 4.6,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Sneakers"
+          "image": "images/classic_white_sneakers.png"
         },
         {
           "id": 2,
-          "name": "Running Shoes",
-          "price": 31000,
+          "name": "High-Top Sneakers",
+          "price": 36000,
           "rating": 4.5,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Running+Shoes"
+          "image": "images/high_top_sneakers.png"
         },
         {
           "id": 3,
@@ -27,23 +27,23 @@
           "price": 42000,
           "rating": 4.7,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Loafers"
+          "image": "images/leather_loafers.png"
         },
         {
           "id": 4,
-          "name": "Canvas Shoes",
-          "price": 22000,
-          "rating": 4.3,
+          "name": "Running Shoes",
+          "price": 31000,
+          "rating": 4.4,
           "inStock": false,
-          "image": "https://via.placeholder.com/600x400?text=Canvas+Shoes"
+          "image": "images/running_shoes.png"
         },
         {
           "id": 5,
-          "name": "High-Top Sneakers",
-          "price": 36000,
-          "rating": 4.6,
+          "name": "Canvas Casual Shoes",
+          "price": 22000,
+          "rating": 4.3,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=High-Top"
+          "image": "images/canvas_casual_shoes.png"
         }
       ]
     },
@@ -58,7 +58,7 @@
           "price": 16000,
           "rating": 4.5,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Hoodie"
+          "image": "images/oversized_hoodie.png"
         },
         {
           "id": 7,
@@ -66,7 +66,7 @@
           "price": 8500,
           "rating": 4.4,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=T-Shirt"
+          "image": "images/plane_white_tshirt.png"
         },
         {
           "id": 8,
@@ -74,7 +74,7 @@
           "price": 28000,
           "rating": 4.7,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Denim+Jacket"
+          "image": "images/denim_jacket.png"
         },
         {
           "id": 9,
@@ -82,7 +82,7 @@
           "price": 21000,
           "rating": 4.6,
           "inStock": false,
-          "image": "https://via.placeholder.com/600x400?text=Jeans"
+          "image": "images/slim_fit_jeans.png"
         },
         {
           "id": 10,
@@ -90,7 +90,7 @@
           "price": 13500,
           "rating": 4.3,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Polo+Shirt"
+          "image": "images/casual_polo_shirt.png"
         }
       ]
     },
@@ -105,15 +105,15 @@
           "price": 18000,
           "rating": 4.4,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Bag"
+          "image": "images/leather_cross_body_bag.png"
         },
         {
           "id": 12,
-          "name": "Minimal Wrist Watch",
+          "name": "Minimalist Wrist Watch",
           "price": 25000,
           "rating": 4.7,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Watch"
+          "image": "images/minimalist_wrist_watch.png"
         },
         {
           "id": 13,
@@ -121,7 +121,7 @@
           "price": 12000,
           "rating": 4.2,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Sunglasses"
+          "image": "images/fashion_sunglasses.png"
         },
         {
           "id": 14,
@@ -129,7 +129,7 @@
           "price": 9500,
           "rating": 4.5,
           "inStock": false,
-          "image": "https://via.placeholder.com/600x400?text=Wallet"
+          "image": "images/leather_wallet.png"
         },
         {
           "id": 15,
@@ -137,7 +137,7 @@
           "price": 7000,
           "rating": 4.1,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Cap"
+          "image": "images/baseball_cap.png"
         }
       ]
     },
@@ -152,7 +152,7 @@
           "price": 38000,
           "rating": 4.8,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Headphones"
+          "image": "images/wireless_headphones.png"
         },
         {
           "id": 17,
@@ -160,7 +160,7 @@
           "price": 45000,
           "rating": 4.7,
           "inStock": false,
-          "image": "https://via.placeholder.com/600x400?text=Smart+Watch"
+          "image": "images/smart_watch.png"
         },
         {
           "id": 18,
@@ -168,7 +168,7 @@
           "price": 26000,
           "rating": 4.6,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Speaker"
+          "image": "images/bluetooth_speaker.png"
         },
         {
           "id": 19,
@@ -176,7 +176,7 @@
           "price": 9500,
           "rating": 4.4,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=Mouse"
+          "image": "images/wireless_mouse.png"
         },
         {
           "id": 20,
@@ -184,7 +184,7 @@
           "price": 14500,
           "rating": 4.5,
           "inStock": true,
-          "image": "https://via.placeholder.com/600x400?text=USB-C+Hub"
+          "image": "images/usb-c_charging_hub.png"
         }
       ]
     }

@@ -82,7 +82,6 @@ nav a{
     text-decoration: none;
     margin: 0 .3rem;
     color: var(--blue-white);
-    position: relative;
     padding: .5rem;
     transition: all .5s;
     border-radius: 5px;
@@ -109,7 +108,8 @@ nav a p{
 
 nav a:hover {
     background-color: var(--btn-bg);
-    color: var(--white);
+    color: var(--primary);
+    font-weight: bolder;
 }
 
 .link::after{
@@ -256,6 +256,11 @@ footer .socials img{
     height: 20rem;
     border-radius: .6rem;
     overflow: hidden;
+    transition: all .3s;
+ }
+
+ .product_card:hover{
+    transform: scale(1.05);
  }
 
  .product_card img{
@@ -278,6 +283,11 @@ footer .socials img{
     border: none;
     padding: .6rem .7rem;
     margin: 1rem auto;
+    transition: all .3s;
+}
+
+.product_card button:hover{
+    background-color: var(--btn-sec);
 }
 
 .dialog{
@@ -364,6 +374,10 @@ footer .socials img{
     .li li p, .li li a{
         padding: 5px;
         margin: 0;
+    }
+
+    .product_card p{
+        margin: .2rem 5%;
     }
 
     footer{

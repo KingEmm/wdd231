@@ -14,6 +14,6 @@ fullName.innerHTML = `Full Name: ${params.get('last_name')} ${params.get('first_
 email.innerHTML = `Email: ${params.get('Email')}`
 // phone.innerHTML = `Phone: ${params.get('phone')}`
 // business.innerHTML = `Business: ${params.get('business')}`
-businessDescription.innerHTML = `Business Description: ${params.get('businessDescription')}`
+businessDescription.innerHTML = `Message: ${params.get('businessDescription')}`
 // reviews.innerHTML = `Membership Level: ${params.get('membership_level')}`
 time.innerHTML = `Time: ${ Date(params.get('time')).toLocaleString()}`
