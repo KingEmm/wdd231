@@ -34,9 +34,14 @@ featured_product.addEventListener('click', (e)=>{
 // })
 
 
+let symbol = await products.getCurrencySymbol();
 
 search.addEventListener('input', async(e)=>{
     // alert('hi')
+    // currency = currency.currency.toUpperCase();
+    // let symbol = currencySymbols[currency];
+    // console.log(currency)
+    // console.log(symbol)
     featured_product.innerHTML = '';
     let data = await products.getProducts();//['ji', 'kip', 'hello']
     data  = data.filter((ele)=>{
@@ -44,12 +49,12 @@ search.addEventListener('input', async(e)=>{
         // console.log(nam);
         return nam.toLowerCase().includes(e.target.value);
     })
-    data.forEach(element => {
+    data.forEach((element) => {
         let product_card = document.createElement('div');
         product_card.classList.add('product_card');
         product_card.innerHTML = `<img width="100" height="100" src="${element.image}" loading="lazy" alt="product">
                 <p>${element.name}</p>
-                <p>$${element.price}</p>
+                <p>${symbol}${element.price}</p>
                 <button class='cart_btn' data-value='${element.id}'>Add to Cart</button>`;
         // console.log(element.id)
         featured_product.appendChild(product_card);

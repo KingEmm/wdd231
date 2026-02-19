@@ -22,7 +22,7 @@ export class Get{
         try{
             const data = await getData('https://kingemm.github.io/wdd231/final/data/product.json');
             let stores = data['stores']
-            // console.log(stores);
+            let symbol = await this.getCurrencySymbol();
             const featured = document.querySelector('.featured_product')
             for(let store in stores){
                 const products = stores[store].products;
@@ -36,7 +36,7 @@ export class Get{
                         product_card.classList.add('product_card');
                         product_card.innerHTML = `<img width="100" height="100" src="${prd.image}" loading="lazy" alt="product">
                                 <p>${prd.name}</p>
-                                <p>$${prd.price}</p>
+                                <p>${symbol}${prd.price}</p>
                                 <button class='cart_btn' data-value='${prd.id}'>Add to Cart</button>`;
             
                         featured.appendChild(product_card);
@@ -50,7 +50,7 @@ export class Get{
                     // product_card.value= 
                     product_card.innerHTML = `<img width="100" height="100" src="${prd[0].image}" loading="lazy" alt="product">
                             <p>${prd[0].name}</p>
-                            <p>$${prd[0].price}</p>
+                            <p>${symbol}${prd[0].price}</p>
                             <button class='cart_btn' data-value='${prd[0].id}'>Add to Cart</button>`
         
                     featured.appendChild(product_card);
@@ -61,6 +61,13 @@ export class Get{
         catch(error){
             console.log('Failed to fetch');
         }
+    }
+
+    getCurrencySymbol = async()=>{
+        let currency = await this.getLocation();
+        currency = currency.currency.toUpperCase();
+        let symbol = currencySymbols[currency];
+        return symbol;
     }
 
     getProducts = async()=>{
@@ -82,34 +89,105 @@ export class Get{
             console.log(error)
         }
     }
-    getLocation = ()=>{
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                console.log(position.coords.latitude);
-                console.log(position.coords.longitude);
-                return [position.coords.latitude, position.coords.latitude];
-            },
-            async (error) => {
+    getLocation = async ()=>{
+        // navigator.geolocation.getCurrentPosition(
+        //     (position) => {
+        //         console.log(position.coords.latitude);
+        //         console.log(position.coords.longitude);
+        //         return [position.coords.latitude, position.coords.latitude];
+        //     },
+        //     async (error) => {
                 console.log('Permision Denied');
-                try{
-                    let data = await fetch('https://ipapi.co/json/');
-                    console.log(data);
-                    console.log(data.city);
-                    console.log(data.region);
-                    console.log(data.country_name);
-                }
-                catch{
-                    console.log("Failed to Get ip");
-                }
-            }
-        )
+
+                let data = await getData('https://ipapi.co/json/');
+                console.log(data);
+                return data;
+                // try{
+                //     let data = await fetch('https://ipapi.co/json/');
+                //     console.log(data);
+                //     console.log(data.city);
+                //     console.log(data.region);
+                //     console.log(data.country_name);
+                // }
+                // catch{
+                //     console.log("Failed to Get ip");
+                // }
+        //     }
+        // )
     }
 }
 
 
-export const addCart = ()=>{
-        alert('hi')
-}
+// export const addCart = ()=>{
+//         alert('hi')
+// }
+
+export const currencySymbols = {
+  USD: "$",
+  EUR: "€",
+  GBP: "£", 
+  JPY: "¥",
+  CNY: "¥",
+  CHF: "CHF",
+  CAD: "C$",
+  AUD: "A$",
+  NZD: "NZ$",
+  NGN: "₦",
+  ZAR: "R",
+  GHS: "₵",
+  KES: "KSh",
+  EGP: "£",
+  MAD: "د.م.",
+  TZS: "TSh",
+  UGX: "USh",
+  XOF: "CFA",
+  XAF: "CFA",
+  AED: "د.إ",
+  SAR: "﷼",
+  QAR: "﷼",
+  KWD: "د.ك",
+  BHD: ".د.ب",
+  OMR: "﷼",
+  ILS: "₪",
+  TRY: "₺",
+  IRR: "﷼",
+  INR: "₹",
+  PKR: "₨",
+  BDT: "৳",
+  LKR: "Rs",
+  NPR: "₨",
+  THB: "฿",
+  IDR: "Rp",
+  MYR: "RM",
+  SGD: "S$",
+  PHP: "₱",
+  KRW: "₩",
+  VND: "₫",
+  HKD: "HK$", 
+  TWD: "NT$",
+  SEK: "kr",
+  NOK: "kr",
+  DKK: "kr", 
+  PLN: "zł",
+  CZK: "Kč", 
+  HUF: "Ft",  
+  RON: "lei",
+  BGN: "лв", 
+  HRK: "kn", 
+  RUB: "₽",  
+  UAH: "₴",
+  MXN: "$",
+  BRL: "R$",
+  ARS: "$",
+  CLP: "$",
+  COP: "$",
+  PEN: "S/",
+  BOB: "Bs.", 
+  DOP: "RD$",
+  JMD: "J$", 
+  TTD: "TT$",  
+};
+
 
 // export const data = getData('http://127.0.0.1:5500/project/data/product.json');
 

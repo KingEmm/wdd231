@@ -1,4 +1,4 @@
-import { Get, addCart } from "./app.mjs";
+import { Get } from "./app.mjs";
 
 
 

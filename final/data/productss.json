@@ -11,7 +11,7 @@
           "price": 28500,
           "rating": 4.6,
           "inStock": true,
-          "image": "images/classic_white_sneakers.png"
+          "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
         },
         {
           "id": 2,
@@ -19,7 +19,7 @@
           "price": 36000,
           "rating": 4.5,
           "inStock": true,
-          "image": "images/high_top_sneakers.png"
+          "image": "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f"
         },
         {
           "id": 3,
@@ -27,7 +27,7 @@
           "price": 42000,
           "rating": 4.7,
           "inStock": true,
-          "image": "images/leather_loafers.png"
+          "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772"
         },
         {
           "id": 4,
@@ -35,7 +35,7 @@
           "price": 31000,
           "rating": 4.4,
           "inStock": false,
-          "image": "images/running_shoes.png"
+          "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
         },
         {
           "id": 5,
@@ -43,7 +43,7 @@
           "price": 22000,
           "rating": 4.3,
           "inStock": true,
-          "image": "images/"
+          "image": "https://images.unsplash.com/photo-1528701800489-20be9c2d21d0"
         }
       ]
     },
@@ -58,7 +58,7 @@
           "price": 16000,
           "rating": 4.5,
           "inStock": true,
-          "image": "images/oversized_hoodie.png"
+          "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38"
         },
         {
           "id": 7,
@@ -66,7 +66,7 @@
           "price": 8500,
           "rating": 4.4,
           "inStock": true,
-          "image": "images/plane_white_tshirt.png"
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
         },
         {
           "id": 8,
@@ -74,7 +74,7 @@
           "price": 28000,
           "rating": 4.7,
           "inStock": true,
-          "image": "images/denim_jacket.png"
+          "image": "https://images.unsplash.com/photo-1521334884684-d80222895322"
         },
         {
           "id": 9,
@@ -82,7 +82,7 @@
           "price": 21000,
           "rating": 4.6,
           "inStock": false,
-          "image": "images/slim_fit_jeans.png"
+          "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246"
         },
         {
           "id": 10,
@@ -90,7 +90,7 @@
           "price": 13500,
           "rating": 4.3,
           "inStock": true,
-          "image": "images/casual_polo_shirt.png"
+          "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a"
         }
       ]
     },
@@ -105,7 +105,7 @@
           "price": 18000,
           "rating": 4.4,
           "inStock": true,
-          "image": "images/leather_cross_body_bag.png"
+          "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7"
         },
         {
           "id": 12,
@@ -113,7 +113,7 @@
           "price": 25000,
           "rating": 4.7,
           "inStock": true,
-          "image": "images/minimalist_wrist_watch.png"
+          "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b"
         },
         {
           "id": 13,
@@ -121,7 +121,7 @@
           "price": 12000,
           "rating": 4.2,
           "inStock": true,
-          "image": "images/fashion_sunglasses.png"
+          "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083"
         },
         {
           "id": 14,
@@ -129,7 +129,7 @@
           "price": 9500,
           "rating": 4.5,
           "inStock": false,
-          "image": "images/leather_wallet.png"
+          "image": "https://images.unsplash.com/photo-1627123424574-724758594e93"
         },
         {
           "id": 15,
@@ -137,7 +137,7 @@
           "price": 7000,
           "rating": 4.1,
           "inStock": true,
-          "image": "images/baseball_cap.png"
+          "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee"
         }
       ]
     },
@@ -152,7 +152,7 @@
           "price": 38000,
           "rating": 4.8,
           "inStock": true,
-          "image": "images/wireless_headphones.png"
+          "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
         },
         {
           "id": 17,
@@ -160,7 +160,7 @@
           "price": 45000,
           "rating": 4.7,
           "inStock": false,
-          "image": "images/smart_watch.png"
+          "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30"
         },
         {
           "id": 18,
@@ -168,7 +168,7 @@
           "price": 26000,
           "rating": 4.6,
           "inStock": true,
-          "image": "images/"
+          "image": "https://images.unsplash.com/photo-1585386959984-a41552231693"
         },
         {
           "id": 19,
@@ -176,7 +176,7 @@
           "price": 9500,
           "rating": 4.4,
           "inStock": true,
-          "image": "images/wireless_mouse.png"
+          "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7"
         },
         {
           "id": 20,
@@ -184,7 +184,7 @@
           "price": 14500,
           "rating": 4.5,
           "inStock": true,
-          "image": "images/usb-c_charging_hub.png"
+          "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
         }
       ]
     }
