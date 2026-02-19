@@ -6,7 +6,6 @@ const keo_cart = JSON.parse(localStorage.getItem('keo_cart')) || [];
 // let itemsList = document.querySelector('ol');
 let modal = document.querySelector('dialog');
 
-
 let ol = document.querySelector('.cart_item ol');
 ol.innerHTML = '';
 
@@ -21,6 +20,8 @@ document.querySelector('#close-modal').addEventListener('click', ()=>{
 })
 
 let products = new Get;
+
+let symbol = await products.getCurrencySymbol();
 
 // keo_cart = []
 
@@ -60,7 +61,7 @@ keo_cart.forEach(async(element) => {
                         </div>
                         <div class="contents">
                             <p>${ele.name}</p>
-                            <strong>$${ele.price}</strong>
+                            <strong>${symbol} ${ele.price}</strong>
                             <a href="#">Coupon eligible</a>
                             <span>${store()}</span>
                         </div>`
