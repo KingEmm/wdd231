@@ -20,7 +20,7 @@ export const getData = async(url) => {
 export class Get{
     getFeatured = async(all)=>{
         try{
-            const data = await getData('https://kingemm.github.io/wdd231/final/data/product.json');
+            const data = await getData('https://kingemm.github.io/wdd231/final/data/products.json');
             let stores = data['stores']
             let symbol = await this.getCurrencySymbol();
             const featured = document.querySelector('.featured_product')
